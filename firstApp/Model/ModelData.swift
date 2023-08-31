@@ -9,6 +9,9 @@ import Foundation
 
 final class ModelData: ObservableObject {
    @Published var landmarks: [Landmark] = load("landmarkData.json")
+    //not published in hikes because it will never be modified
+    var hikes: [Hike] = load("hikeData.json")
+    
 
 }
 
